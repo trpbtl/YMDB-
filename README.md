@@ -1,6 +1,6 @@
-# YMDB- Awoye's Movie Database (WEB-APP)
-🎬 MENJFLIX
-MENJFLIX is a dynamic, database-driven web application built using Oracle APEX, designed to emulate core features of IMDB. This project demonstrates a practical implementation of low-code development, data modeling, and interactive front-end UI design — all within a fully managed Oracle environment.
+# YEFLIX- Awoye's Movie Database (WEB-APP)
+🎬 YEFLIX
+YEFLIX is a dynamic, database-driven web application built using Oracle APEX, designed to emulate core features of IMDB. This project demonstrates a practical implementation of low-code development, data modeling, and interactive front-end UI design — all within a fully managed Oracle environment.
 
 🚀 Built with the goal of mastering full-stack concepts and delivering production-grade applications using Oracle technologies.
 
