@@ -1,71 +1,107 @@
-# YEFLIX- Awoye's Movie Database (WEB-APP)
-🎬 YEFLIX
-YEFLIX is a dynamic, database-driven web application built using Oracle APEX, designed to emulate core features of IMDB. This project demonstrates a practical implementation of low-code development, data modeling, and interactive front-end UI design — all within a fully managed Oracle environment.
+# 🎬 YEFLIX – Awoye's Movie Database (WEB-APP)
 
-🚀 Built with the goal of mastering full-stack concepts and delivering production-grade applications using Oracle technologies.
+[![Made with Oracle APEX](https://img.shields.io/badge/Made%20with-Oracle%20APEX-red)](https://apex.oracle.com/)  
+[![Database Driven](https://img.shields.io/badge/Database-Driven-blue)]()  
+[![AI Ready](https://img.shields.io/badge/AI-Ready-purple)]()  
+[![Version](https://img.shields.io/badge/version-1.0-brightgreen)]()  
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)  
+[![Status](https://img.shields.io/badge/status-Active-success)]()  
 
-📌 Table of Contents
-About the Project
+> **YEFLIX** is a dynamic, database-driven movie application built with Oracle APEX, inspired by IMDb. It showcases low-code development, relational data modeling, and interactive UI design, all deployed in a fully managed Oracle Cloud environment.
 
-Features:
-1.Tech Stac
-2.Database Design
-3.AI Integration (Optional)
-4.Architecture Overview
-5.Screenshots
-6.Setup & Deployment
-7.Future Improvements
-8.Author
+---
 
-📖 About the Project
-MENJFLIX was developed as a full-stack APEX project to simulate a modern movie database application. It leverages Oracle's low-code platform to manage back-end data, build intuitive UIs, and optionally incorporate AI features like generative plot summaries.
+## 📑 Table of Contents
+- [Live Demo](#-live-demo)
+- [About the Project](#-about-the-project)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Database Design](#-database-design)
+- [AI Integration (Optional)](#-ai-integration-optional)
+- [Architecture Overview](#-architecture-overview)
+- [Screenshots](#-screenshots)
+- [Setup & Deployment](#-setup--deployment)
+- [Future Improvements](#-future-improvements)
+- [Author](#-author)
+- [License](#-license)
 
-The goal was to:
-Reinforce SQL and data modeling skills.
-Learn Oracle APEX application building.
-Simulate real-world UI/UX flows in enterprise dashboards.
-Explore integration of AI models (e.g., ONNX) for future expansion.
+---
 
-🌟 Features
-Feature	Description
-🎥 Movie Catalog	Searchable list of movies with posters, release dates, genres, and ratings.
-🧑 Cast & Crew	Actor and director profiles with cross-linked filmographies.
-⭐ User Reviews	Community-based rating and review system with APEX interactive reports.
-🔎 Faceted Search	Filter by genre, year, rating, actor, and more using APEX’s faceted search.
-📊 Analytics	Visual charts and dashboards showing movie trends and user activity.
-🧠 AI Extensions	(Optional) Generate plot summaries or recommendations via ONNX models and RAG sources.
+## 🌐 Live Demo
+🚀 **[Click here to view the live demo](https://your-demo-link.com)** *(Replace with your deployed app URL)*  
 
-🧰 Tech Stack
-Layer	Technology
-Frontend	Oracle APEX UI Components (Cards, Forms, Dialogs, Reports, Charts)
-Backend	Oracle Database (PL/SQL, Views, Functions, Triggers)
-AI/ML (optional)	ONNX Model Upload via DB, Oracle AI Vector Search / RAG
-DevOps	Oracle Cloud Autonomous Database, APEX export packages
-Tools	SQL Developer, SQLcl, Live SQL
+> **Demo Credentials** *(if applicable)*  
+> **Username:** demo_user  
+> **Password:** Demo@123  
 
-🗃️ Database Design
-MENJFLIX uses a relational schema with the following key entities:
-MOVIES: Stores title, genre, rating, release year, poster URL.
-ACTORS: Basic actor profiles with links to films.
-CAST: Many-to-many relationship between actors and movies.
-REVIEWS: User-submitted ratings and comments.
-USERS (optional): For managing login and personalization features.
-All tables are designed with appropriate foreign keys, constraints, and indexing to ensure performance and data integrity.
+---
 
-🤖 AI Integration (Optional)
-MENJFLIX optionally integrates with Oracle AI Services using:
+## 📖 About the Project
+YEFLIX was developed as a **full-stack Oracle APEX project** to simulate a modern movie database platform.  
+It uses Oracle's low-code tools to handle **backend data management**, **UI creation**, and **optional AI-powered recommendations**.  
 
-ONNX model loading into Oracle DB
-Use of CREATE MINING MODEL to define predictive models
-Integration with RAG (Retrieval-Augmented Generation) sources for smart recommendations and AI-generated summaries
-APEX UI extensions to call AI attributes and render insights dynamically
+**Goals of the project:**
+- Reinforce SQL & relational database design skills.
+- Gain experience in Oracle APEX app building.
+- Simulate real-world UI/UX flows for enterprise-grade dashboards.
+- Explore AI integration using ONNX & RAG for summaries and recommendations.
 
-ℹ️ Requires additional setup: granting privileges and uploading models to schema.
+---
 
-🏗️ Architecture Overview
-plaintext
-Copy
-Edit
+## 🌟 Features
+
+| Feature | Description |
+|---------|-------------|
+| 🎥 **Movie Catalog** | Searchable movie listings with posters, release dates, genres, and ratings. |
+| 🧑 **Cast & Crew** | Actor/director profiles linked to their filmographies. |
+| ⭐ **User Reviews** | Community-based ratings & reviews via APEX interactive reports. |
+| 🔎 **Faceted Search** | Filter by genre, year, rating, actor, and more. |
+| 📊 **Analytics** | Charts & dashboards showing trends and user activity. |
+| 🧠 **AI Extensions** *(optional)* | Generate plot summaries & recommendations using ONNX + RAG. |
+
+---
+
+## 🧰 Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | Oracle APEX UI Components (Cards, Forms, Dialogs, Reports, Charts) |
+| **Backend** | Oracle Database (PL/SQL, Views, Functions, Triggers) |
+| **AI/ML (optional)** | ONNX Models, Oracle AI Vector Search, RAG Pipelines |
+| **DevOps** | Oracle Autonomous Database, APEX export packages |
+| **Tools** | SQL Developer, SQLcl, Oracle Live SQL |
+
+---
+
+## 🗃 Database Design
+
+YEFLIX uses a **relational schema** with these main entities:
+- **MOVIES**: Title, genre, rating, release year, poster URL.  
+- **ACTORS**: Actor profiles with linked film roles.  
+- **CAST**: Many-to-many join table between actors and movies.  
+- **REVIEWS**: User-submitted ratings and comments.  
+- **USERS** *(optional)*: Login and personalization features.  
+
+**Data Integrity**: Foreign keys, constraints, and indexes are applied for performance.
+
+---
+
+## 🤖 AI Integration (Optional)
+
+YEFLIX can integrate AI features using:
+- **ONNX model loading** into Oracle Database.
+- **CREATE MINING MODEL** for predictive analytics.
+- **RAG (Retrieval-Augmented Generation)** for contextual recommendations.
+
+**Requirements**:  
+```sql
+GRANT CREATE MINING MODEL TO your_schema;
+```
+
+---
+
+## 🏗 Architecture Overview
+```
 [User Browser]
      ↓
 [Oracle APEX Frontend]
@@ -73,46 +109,80 @@ Edit
 [Oracle Database Backend]
      ↘ Optional ↙
 [AI Model via ONNX / RAG Services]
-All UI elements are built using Oracle APEX components.
+```
+- **UI**: Built entirely with Oracle APEX components.  
+- **Backend**: PL/SQL logic, data validation, and security.  
+- **AI Layer** *(optional)*: Vector embeddings & text generation.
 
-Backend logic (validation, calculation, security) is handled via PL/SQL and APEX processes.
-Optional AI integration uses vector embeddings and text generation in the database context.
+---
 
-🖼️ Screenshots
-<img width="1911" height="789" alt="image" src="https://github.com/user-attachments/assets/ca54c609-873d-4d37-a05d-86507ee7854d" />
-<img width="1900" height="850" alt="image" src="https://github.com/user-attachments/assets/8369e35f-bcc3-4460-92d0-e1875e88531f" />
+## 🖼 Screenshots
 
+| Screen | Description | Preview |
+|--------|-------------|---------|
+| **Home / Dashboard** | Main landing page showing featured movies. | ![Dashboard](screenshots/dashboard.png) |
+| **Movie Details** | Movie info with poster, cast, reviews. | ![Movie Details](screenshots/movie_details.png) |
+| **Search & Filters** | Faceted search with multiple filters. | ![Search](screenshots/search.png) |
+| **Actor Profile** | Bio, photo, and filmography. | ![Actor Profile](screenshots/actor_profile.png) |
+| **Analytics** | Charts of ratings and trends. | ![Analytics](screenshots/analytics.png) |
 
+> 🖼 **Tip:** Place your actual screenshots inside a `/screenshots` folder in your repo.
 
-⚙️ Setup & Deployment
-Requirements:
-Oracle APEX environment (free on apex.oracle.com or Oracle Cloud)
-SQL Developer or SQLcl
-Oracle Database user with CREATE privileges
+---
 
-Deployment Steps:
-Import the APEX App:
+## ⚙ Setup & Deployment
 
-Upload the .sql or .zip export file in APEX App Builder.
-Run SQL Scripts:
-Set up the schema: movies, actors, reviews, etc.
-Seed the database with sample data if needed.
+### **1️⃣ Import the APEX App**
+1. Log in to your Oracle APEX workspace.  
+2. Go to **App Builder → Import**.  
+3. Upload the `.sql` or `.zip` export file from `/src`.  
+4. Install supporting objects when prompted.
 
-Grant Privileges (if using AI features):
+---
 
-sql
-Copy
-Edit
-GRANT CREATE MINING MODEL TO YourSchemaName;
-Test the App:
+### **2️⃣ Run SQL Scripts**
+- Create schema objects:
+```sql
+CREATE TABLE movies (...);
+CREATE TABLE actors (...);
+CREATE TABLE cast (...);
+CREATE TABLE reviews (...);
+```
+- Insert seed data if required.
 
-Run and interact with the UI.
+---
 
-Submit reviews, view dashboards, etc.
+### **3️⃣ (Optional) AI Feature Setup**
+- Grant privileges:
+```sql
+GRANT CREATE MINING MODEL TO your_schema;
+```
+- Upload ONNX model to database.
+- Configure AI Vector Search if using RAG.
 
-📈 Future Improvements
-🧑‍💻 Add user authentication and login sessions
-🔄 Allow users to edit/delete their reviews
-🎯 Add recommendation engine based on viewing history
-🌐 Support for multiple languages or subtitles
-🤖 Improve AI integration with contextual queries
+---
+
+### **4️⃣ Run the Application**
+1. Click **Run Application** in APEX.  
+2. Log in using default credentials or newly created users.
+
+---
+
+## 📈 Future Improvements
+- 🧑‍💻 Add user authentication & login sessions.  
+- 🔄 Allow users to edit/delete reviews.  
+- 🎯 AI-based movie recommendations based on watch history.  
+- 🌐 Multi-language & subtitle support.  
+- 🤖 Context-aware AI queries for summaries.  
+
+---
+
+## 👤 Author
+**Eyram Makafui Awoye**  
+- 💼 [LinkedIn](https://www.linkedin.com/in/eyram-makafui-awoye)  
+- 📧 eyram.awoye@example.com  
+
+---
+
+## 📜 License
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
