@@ -3,7 +3,7 @@
 [![Made with Oracle APEX](https://img.shields.io/badge/Made%20with-Oracle%20APEX-red)](https://apex.oracle.com/)  
 [![Database Driven](https://img.shields.io/badge/Database-Driven-blue)]()  
 [![AI Ready](https://img.shields.io/badge/AI-Ready-purple)]()  
-[![Version](https://img.shields.io/badge/version-1.0-brightgreen)]()  
+[![Version](https://img.shields.io/badge/version-2.0-brightgreen)]()  
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)  
 [![Status](https://img.shields.io/badge/status-Active-success)]()  
 
